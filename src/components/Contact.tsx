@@ -10,19 +10,19 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@robstarconsulting.com",
-      href: "mailto:contact@robstarconsulting.com"
+      value: "info@robstarconsulting.com",
+      href: "mailto:info@robstarconsulting.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+1 (770) 818-6698",
+      href: "tel:+17708186698"
     },
     {
       icon: MapPin,
-      label: "Office",
-      value: "New York, NY",
+      label: "Location",
+      value: "Global",
       href: null
     }
   ];
