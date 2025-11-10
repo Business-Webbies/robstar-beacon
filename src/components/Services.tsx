@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "./ui/card";
-import { Lightbulb, LineChart, Cpu, Shield, Users } from "lucide-react";
+import { Lightbulb, LineChart, Cpu, Shield, Users, Compass } from "lucide-react";
 
 const Services: React.FC = () => {
   const services = [
@@ -33,6 +33,12 @@ const Services: React.FC = () => {
       title: "Outsourcing",
       description: "We offer comprehensive outsourcing services for any and every industry, providing flexible solutions that meet your specific business needs.",
       features: ["Cross-Industry Expertise", "Scalable Solutions", "Global Delivery"]
+    },
+    {
+      icon: Compass,
+      title: "Organizational Development & Leadership",
+      description: "Empower teams, strengthen leadership capabilities, and foster a culture that supports long-term performance and adaptability.",
+      features: ["Leadership Coaching & Development", "Organizational Structure & Role Design", "Change Readiness & Employee Engagement"]
     }
   ];
 
