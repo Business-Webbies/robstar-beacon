@@ -8,11 +8,11 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 flex items-center justify-center">
+            <div className="w-16 h-16 flex items-center justify-center">
               <img
                 src="/rs-infinity-logo.png"
                 alt="R & S Consulting logo"
-                className="w-10 h-10 object-contain"
+                className="w-16 h-16 object-contain"
               />
             </div>
             <div>
