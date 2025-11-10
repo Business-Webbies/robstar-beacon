@@ -1,12 +1,34 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { Mail } from "lucide-react";
+import { Card } from "./ui/card";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact: React.FC = () => {
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "Email",
+      value: "info@robstarconsulting.com",
+      href: "mailto:info@robstarconsulting.com"
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+1 (770) 818-6698",
+      href: "tel:+17708186698"
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Global",
+      href: null
+    }
+  ];
+
   return (
     <section id="contact" className="py-24 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-12">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
           <span className="text-sm uppercase tracking-[0.2em] text-primary font-semibold">
             Get In Touch
           </span>
@@ -20,16 +42,44 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <Button 
-          asChild
-          size="lg"
-          className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity font-semibold tracking-wide"
-        >
-          <a href="mailto:info@robstarconsulting.com" className="inline-flex items-center gap-2">
-            <Mail className="w-5 h-5" />
-            Contact Us
-          </a>
-        </Button>
+        <div className="grid lg:grid-cols-3 gap-8 items-center">
+          {/* Contact Info Cards */}
+          <div className="space-y-4">
+            {contactInfo.map((info, index) => (
+              <Card key={index} className="p-6 bg-card border-border hover:border-primary/50 transition-colors">
+                <div className="flex items-start gap-4">
+                  <div className="p-2 bg-gradient-primary rounded-lg">
+                    <info.icon className="w-5 h-5 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                    {info.href ? (
+                      <a href={info.href} className="font-semibold text-foreground hover:text-primary transition-colors">
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="font-semibold text-foreground">{info.value}</p>
+                    )}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          {/* Contact Button */}
+          <div className="lg:col-span-2 flex justify-center">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity font-semibold tracking-wide"
+            >
+              <a href="mailto:info@robstarconsulting.com" className="inline-flex items-center gap-2">
+                <Mail className="w-5 h-5" />
+                Contact Us
+              </a>
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   );
