@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Button */}
-          <div className="lg:col-span-2 flex justify-center">
+          <div className="lg:col-span-2 flex flex-col items-center gap-6">
             <Button 
               asChild
               size="lg"
@@ -78,6 +78,10 @@ const Contact: React.FC = () => {
                 Contact Us
               </a>
             </Button>
+            
+            <p className="text-sm text-muted-foreground text-center max-w-2xl">
+              Please note: RobStar Consulting does not provide legal or financial advice. For such services, please consult a qualified professional.
+            </p>
           </div>
         </div>
       </div>

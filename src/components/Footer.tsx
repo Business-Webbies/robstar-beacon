@@ -29,6 +29,12 @@ const Footer: React.FC = () => {
             <p>&copy; {currentYear} RobStar Consulting, LLC. All rights reserved.</p>
           </div>
         </div>
+        
+        <div className="mt-6 pt-6 border-t border-border">
+          <p className="text-xs text-muted-foreground text-center max-w-4xl mx-auto">
+            Disclaimer: The information provided on this website is for general informational purposes only and does not constitute financial, legal, or professional advice.
+          </p>
+        </div>
       </div>
     </footer>
   );
