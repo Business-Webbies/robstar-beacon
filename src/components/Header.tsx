@@ -3,7 +3,7 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-4">
         {/* Logo */}
         <a href="#top" className="flex items-center gap-3 group">
           <div className="w-16 h-16 flex items-center justify-center">
