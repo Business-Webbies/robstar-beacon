@@ -6,11 +6,11 @@ const Header: React.FC = () => {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#top" className="flex items-center gap-3 group">
-          <div className="w-14 h-14 flex items-center justify-center">
+          <div className="w-16 h-16 flex items-center justify-center">
             <img
               src="/rs-infinity-logo.png"
               alt="R & S Consulting logo"
-              className="w-14 h-14 object-contain group-hover:scale-105 transition-transform duration-200"
+              className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-200"
             />
           </div>
           <div>
