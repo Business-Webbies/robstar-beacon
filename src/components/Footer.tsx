@@ -8,12 +8,12 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gradient-primary p-[2px]">
-              <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                <span className="text-[0.65rem] font-bold tracking-[0.12em] bg-gradient-primary bg-clip-text text-transparent">
-                  R&S
-                </span>
-              </div>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img
+                src="/rs-infinity-logo.png"
+                alt="R & S Consulting logo"
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <div>
               <div className="text-sm font-semibold text-foreground">
