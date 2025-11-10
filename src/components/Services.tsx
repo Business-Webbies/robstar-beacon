@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "./ui/card";
-import { Lightbulb, LineChart, Cpu, Shield } from "lucide-react";
+import { Lightbulb, LineChart, Cpu, Shield, Users } from "lucide-react";
 
 const Services: React.FC = () => {
   const services = [
@@ -27,6 +27,12 @@ const Services: React.FC = () => {
       title: "Risk & Compliance",
       description: "Navigate complex regulatory landscapes and build robust risk management frameworks to protect your organization.",
       features: ["Risk Assessment", "Compliance Strategy", "Governance Frameworks"]
+    },
+    {
+      icon: Users,
+      title: "Outsourcing",
+      description: "We offer comprehensive outsourcing services for any and every industry, providing flexible solutions that meet your specific business needs.",
+      features: ["Cross-Industry Expertise", "Scalable Solutions", "Global Delivery"]
     }
   ];
 
